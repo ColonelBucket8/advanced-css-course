@@ -7,26 +7,36 @@
 .container {
   background-color: #ccc;
   padding: 10px;
-  height: 1500px;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
 }
 
 .item {
   background-color: #f1425d;
-  padding: 30px;
   margin: 30px;
+  padding: 30px;
   color: #fff;
   font-size: 40px;
+
 }
 
 .i2 {
   height: 200px;
+  /*flex-basis: 300px;*/
+  /*flex-shrink: 0;*/
+
+  flex: 0 1 300px;
+}
+
+.i3 {
+  order: 1;
+  flex: 1;
 }
 
 .i4 {
-    /*font-size: 80px;*/
+  align-self: flex-end;
+  order: -1;
 }
