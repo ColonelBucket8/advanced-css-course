@@ -6,7 +6,7 @@
   justify-content: space-between;
   gap: $gutter-horizontal;
 
-  color: #fff;
+  color: #000;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
@@ -15,7 +15,6 @@
   // @include clearfix;
 
   .col-1-of-2 {
-    background-color: orangered;
     flex: 1;
     // width: calc((100% - $gutter-horizontal) / 2);
     // background-color: orangered;
