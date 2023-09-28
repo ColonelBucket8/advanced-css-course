@@ -1,3 +1,18 @@
+/*
+0 - 600px:   Phone
+600 - 900px:  Tablet portrait
+900 - 1200px:  Tablet portrait
+1200 - 1800px: Is where our normal styles apply
+1800px+:  Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+ */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -35,6 +50,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -330,8 +354,7 @@ body {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
-  padding: 6rem;
-  padding-left: 9rem;
+  padding: 6rem 6rem 6rem 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
   .story__shape {
@@ -470,7 +493,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3; }
+  transition: all 0.3s; }
   .popup__content {
     position: absolute;
     top: 50%;
